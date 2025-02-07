@@ -77,6 +77,7 @@
   programs.home-manager.enable = true;
 
   programs = {
+    dust.enable = true;
     fish.enable = true;
     git.enable = true;
     yazi.enable = true;
@@ -85,6 +86,7 @@
   services.toggl-extractor.enable = true;
 
   imports = [
+    ./modules/dust.nix
     ./modules/fish.nix
     ./modules/git.nix
     ./modules/toggl-extractor.nix
