@@ -78,6 +78,7 @@
 
   programs = {
     git.enable = true;
+    yazi.enable = true;
   };
 
   services.toggl-extractor.enable = true;
