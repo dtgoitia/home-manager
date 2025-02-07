@@ -77,6 +77,7 @@
   programs.home-manager.enable = true;
 
   programs = {
+    fish.enable = true;
     git.enable = true;
     yazi.enable = true;
   };
