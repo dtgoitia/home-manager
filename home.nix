@@ -85,6 +85,7 @@
   services.toggl-extractor.enable = true;
 
   imports = [
+    ./modules/fish.nix
     ./modules/git.nix
     ./modules/toggl-extractor.nix
   ];
