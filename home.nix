@@ -80,6 +80,7 @@
     dust.enable = true;
     fish.enable = true;
     git.enable = true;
+    starship.enable = true;
     yazi.enable = true;
   };
 
@@ -89,6 +90,7 @@
     ./modules/dust.nix
     ./modules/fish.nix
     ./modules/git.nix
+    ./modules/starship.nix
     ./modules/toggl-extractor.nix
   ];
 }
