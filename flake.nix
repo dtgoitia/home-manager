@@ -8,11 +8,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rpi-temperature-tracker = {
+      url = "github:dtgoitia/rpi-temperature-tracker/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     home-manager,
+    rpi-temperature-tracker,
     ...
   }: let
     system = "aarch64-linux";
@@ -27,6 +32,9 @@
 
       # Optionally use extraSpecialArgs
       # to pass through arguments to home.nix
+      extraSpecialArgs = {
+        inherit rpi-temperature-tracker;
+      };
     };
   };
 }

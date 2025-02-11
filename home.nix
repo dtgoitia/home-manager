@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  rpi-temperature-tracker,
   ...
 }: {
   home.username = "dtg";
@@ -23,6 +24,7 @@
     yazi.enable = true;
   };
 
+  services.rpi-temperature-tracker.enable = true;
   services.toggl-extractor.enable = true;
 
   imports = [
@@ -30,6 +32,7 @@
     ./modules/fish.nix
     ./modules/git.nix
     ./modules/jump.nix
+    ./modules/rpi-temperature-tracker.nix
     ./modules/starship.nix
     ./modules/toggl-extractor.nix
   ];
