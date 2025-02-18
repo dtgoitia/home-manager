@@ -13,6 +13,15 @@
       };
 
       functions = {
+        frc = {
+          body = ''
+            set CONFIG_PATH ~/.config/fish/config.fish
+            echo "reloading $CONFIG_PATH"
+            source $CONFIG_PATH
+          '';
+          description = "reload fish configuration";
+        };
+
         find_venv = {
           body = ''
             for dir_name in ".venv" ".env" "venv"
