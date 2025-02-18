@@ -18,7 +18,8 @@
       toggl-extractor = {
         Unit = {
           Description = "tool to download all your Toggl data using the Toggl API";
-          After = ["network.target"];
+          After = ["check-internet.service"];
+          Wanted = ["check-internet.service"];
         };
         Service = {
           Type = "oneshot";
