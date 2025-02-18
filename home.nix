@@ -28,6 +28,7 @@
   services.toggl-extractor.enable = true;
 
   imports = [
+    ./modules/check-internet.nix
     ./modules/dust.nix
     ./modules/fish.nix
     ./modules/git.nix
