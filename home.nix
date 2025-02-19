@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  rpi-temperature-tracker,
   ...
 }: {
   home.username = "dtg";
