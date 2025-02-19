@@ -31,23 +31,22 @@
     toggl-cli,
     ...
   }: let
-    system = "aarch64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    commonExtraSpecialArgs = {
+      inherit check-internet;
+      inherit rpi-temperature-tracker;
+      inherit toggl-cli;
+    };
   in {
-    homeConfigurations."dtg" = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
+    homeConfigurations."dtg@bost" = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.aarch64-linux;
+      modules = [./hosts/common.nix ./hosts/bost.nix];
+      extraSpecialArgs = commonExtraSpecialArgs;
+    };
 
-      # Specify your home configuration modules here, for example,
-      # the path to your home.nix.
-      modules = [./home.nix];
-
-      # Optionally use extraSpecialArgs
-      # to pass through arguments to home.nix
-      extraSpecialArgs = {
-        inherit check-internet;
-        inherit rpi-temperature-tracker;
-        inherit toggl-cli;
-      };
+    homeConfigurations."dtg@beltz" = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      modules = [./hosts/common.nix ./hosts/beltz.nix];
+      extraSpecialArgs = commonExtraSpecialArgs;
     };
   };
 }
