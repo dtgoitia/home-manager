@@ -22,6 +22,7 @@
     git.enable = true;
     jump.enable = true;
     starship.enable = true;
+    toggl-cli.enable = true;
     yazi.enable = true;
   };
 
@@ -36,6 +37,7 @@
     ./modules/jump.nix
     ./modules/rpi-temperature-tracker.nix
     ./modules/starship.nix
+    ./modules/toggl-cli.nix
     ./modules/toggl-extractor.nix
   ];
 }

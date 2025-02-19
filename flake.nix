@@ -8,12 +8,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    check-internet = {
+      url = "github:dtgoitia/check-internet/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     rpi-temperature-tracker = {
       url = "github:dtgoitia/rpi-temperature-tracker/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    check-internet = {
-      url = "github:dtgoitia/check-internet/main";
+    toggl-cli = {
+      url = "github:dtgoitia/t-rs/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -21,8 +26,9 @@
   outputs = {
     nixpkgs,
     home-manager,
-    rpi-temperature-tracker,
     check-internet,
+    rpi-temperature-tracker,
+    toggl-cli,
     ...
   }: let
     system = "aarch64-linux";
@@ -38,8 +44,9 @@
       # Optionally use extraSpecialArgs
       # to pass through arguments to home.nix
       extraSpecialArgs = {
-        inherit rpi-temperature-tracker;
         inherit check-internet;
+        inherit rpi-temperature-tracker;
+        inherit toggl-cli;
       };
     };
   };
