@@ -22,7 +22,7 @@
     git.enable = true;
     jump.enable = true;
     starship.enable = true;
-    toggl-cli.enable = true;
+    toggl-cli.enable = false;
     yazi.enable = true;
   };
 
