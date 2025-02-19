@@ -8,6 +8,10 @@
       git = {
         userName = "David Torralba Goitia";
         userEmail = "david.torralba.goitia@gmail.com";
+
+        aliases = {
+          ch = "checkout";
+        };
       };
 
       fish = lib.mkIf config.programs.fish.enable {
