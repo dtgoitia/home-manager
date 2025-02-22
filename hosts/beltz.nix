@@ -10,6 +10,7 @@
     fzf.enable = true;
     jq.enable = true;
     jump.enable = true;
+    keepassxc.enable = true;
     ledger-cli.enable = true;
     toggl-cli.enable = true;
     tree.enable = true;
