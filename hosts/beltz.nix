@@ -10,6 +10,7 @@
     ledger-cli.enable = true;
     toggl-cli.enable = true;
     tree.enable = true;
+    yazi.enable = true;
     yq.enable = true;
   };
 }
