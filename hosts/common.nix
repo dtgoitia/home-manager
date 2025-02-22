@@ -20,6 +20,7 @@
     ../modules/check-internet.nix
     ../modules/dust.nix
     ../modules/fish.nix
+    ../modules/gimp.nix
     ../modules/git.nix
     ../modules/jump.nix
     ../modules/keepassxc.nix
