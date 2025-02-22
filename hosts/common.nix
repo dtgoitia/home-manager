@@ -15,6 +15,7 @@
   programs.home-manager.enable = true;
 
   imports = [
+    ../modules/atop.nix
     ../modules/check-internet.nix
     ../modules/dust.nix
     ../modules/fish.nix
