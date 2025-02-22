@@ -20,6 +20,7 @@
     ../modules/fish.nix
     ../modules/git.nix
     ../modules/jump.nix
+    ../modules/ledger-cli.nix
     ../modules/rpi-temperature-tracker.nix
     ../modules/starship.nix
     ../modules/toggl-cli.nix
