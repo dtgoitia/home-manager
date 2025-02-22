@@ -21,6 +21,7 @@
     ../modules/fish.nix
     ../modules/git.nix
     ../modules/jump.nix
+    ../modules/keepassxc.nix
     ../modules/ledger-cli.nix
     ../modules/rpi-temperature-tracker.nix
     ../modules/starship.nix
