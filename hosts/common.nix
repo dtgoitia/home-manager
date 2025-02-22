@@ -24,5 +24,6 @@
     ../modules/starship.nix
     ../modules/toggl-cli.nix
     ../modules/toggl-extractor.nix
+    ../modules/yq.nix
   ];
 }
