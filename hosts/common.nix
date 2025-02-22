@@ -15,6 +15,7 @@
   programs.home-manager.enable = true;
 
   imports = [
+    ../modules/alejandra.nix
     ../modules/atop.nix
     ../modules/check-internet.nix
     ../modules/dust.nix
