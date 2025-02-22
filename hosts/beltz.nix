@@ -4,6 +4,7 @@
   ...
 }: {
   programs = {
+    atop.enable = true;
     bat.enable = true;
     dust.enable = true;
     jump.enable = true;
