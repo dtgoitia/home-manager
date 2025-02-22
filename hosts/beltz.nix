@@ -4,6 +4,7 @@
   ...
 }: {
   programs = {
+    alejandra.enable = true;
     atop.enable = true;
     bat.enable = true;
     dust.enable = true;
