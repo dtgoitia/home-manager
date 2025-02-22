@@ -7,6 +7,7 @@
     atop.enable = true;
     bat.enable = true;
     dust.enable = true;
+    fzf.enable = true;
     jump.enable = true;
     ledger-cli.enable = true;
     toggl-cli.enable = true;
