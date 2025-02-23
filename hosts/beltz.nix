@@ -12,7 +12,7 @@
     jq.enable = true;
     jump.enable = true;
     k9s.enable = true;
-    keepassxc.enable = true;
+    keepassxc.enable = false;
     ledger-cli.enable = true;
     meld.enable = true;
     starship.enable = true;
