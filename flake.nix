@@ -31,7 +31,7 @@
     toggl-cli,
     ...
   }: let
-    commonExtraSpecialArgs = {
+    baseExtraSpecialArgs = {
       inherit check-internet;
       inherit rpi-temperature-tracker;
       inherit toggl-cli;
@@ -39,14 +39,14 @@
   in {
     homeConfigurations."dtg@bost" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.aarch64-linux;
-      modules = [./hosts/common.nix ./hosts/bost.nix];
-      extraSpecialArgs = commonExtraSpecialArgs;
+      modules = [./hosts/base.nix ./hosts/bost.nix];
+      extraSpecialArgs = baseExtraSpecialArgs;
     };
 
     homeConfigurations."dtg@beltz" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      modules = [./hosts/common.nix ./hosts/beltz.nix];
-      extraSpecialArgs = commonExtraSpecialArgs;
+      modules = [./hosts/base.nix ./hosts/beltz.nix];
+      extraSpecialArgs = baseExtraSpecialArgs;
     };
   };
 }
