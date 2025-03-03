@@ -31,10 +31,6 @@ in {
 
     home.file.".local/share/applications/org.keepassxc.KeePassXC.desktop".text = patched_desktop_file;
 
-    home.activation = {
-      update-desktop-database = lib.hm.dag.entryAfter ["writeBoundary"] ''
-        ${pkgs.desktop-file-utils}/bin/update-desktop-database ~/.local/share/applications/
-      '';
-    };
+    custom.gui-apps.keepassxc = true;
   };
 }

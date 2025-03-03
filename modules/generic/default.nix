@@ -20,6 +20,7 @@
     ./toggl-cli.nix
     ./toggl-extractor.nix
     ./tree.nix
+    ./xdg.nix
     ./yq.nix
   ];
 }

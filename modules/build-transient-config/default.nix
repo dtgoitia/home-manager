@@ -4,7 +4,6 @@
   ...
 }: {
   imports = [
-    ./generic
-    ./build-transient-config
+    ./custom-attributes.nix
   ];
 }
