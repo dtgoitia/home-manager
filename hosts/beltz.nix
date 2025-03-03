@@ -18,6 +18,7 @@
     starship.enable = true;
     toggl-cli.enable = true;
     tree.enable = true;
+    vlc.enable = true;
     yazi.enable = true;
     yq.enable = true;
   };
