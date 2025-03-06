@@ -9,6 +9,7 @@
     bat.enable = true;
     dust.enable = true;
     fzf.enable = true;
+    git.enable = true;
     jq.enable = true;
     jump.enable = true;
     k9s.enable = true;
