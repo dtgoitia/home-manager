@@ -141,6 +141,9 @@
 
       # Nix
       result/
+
+      # Dart
+      .dart_tool/
     '';
   };
 }
