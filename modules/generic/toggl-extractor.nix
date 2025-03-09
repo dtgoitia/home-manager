@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  toggl-extractor, # remember to add it to `extraSpecialArgs` in `flake.nix`
   ...
 }: {
   options.services.toggl-extractor = {
@@ -23,8 +24,7 @@
         };
         Service = {
           Type = "oneshot";
-          ExecStart = "${pkgs.nix}/bin/nix run .#start";
-          WorkingDirectory = "${config.home.homeDirectory}/projects/toggl-extractor";
+          ExecStart = "${toggl-extractor.packages.${pkgs.system}.default}/bin/toggl-extractor";
           EnvironmentFile = "${config.home.homeDirectory}/.secrets/toggl-extractor";
         };
         Install.WantedBy = ["default.target"];

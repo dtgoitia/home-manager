@@ -21,6 +21,10 @@
       url = "github:dtgoitia/t-rs/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    toggl-extractor = {
+      url = "github:dtgoitia/toggl-extractor/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -29,12 +33,14 @@
     check-internet,
     rpi-temperature-tracker,
     toggl-cli,
+    toggl-extractor,
     ...
   }: let
     baseExtraSpecialArgs = {
       inherit check-internet;
       inherit rpi-temperature-tracker;
       inherit toggl-cli;
+      inherit toggl-extractor;
     };
   in {
     homeConfigurations."dtg@bost" = home-manager.lib.homeManagerConfiguration {

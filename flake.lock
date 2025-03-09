@@ -118,7 +118,8 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "rpi-temperature-tracker": "rpi-temperature-tracker",
-        "toggl-cli": "toggl-cli"
+        "toggl-cli": "toggl-cli",
+        "toggl-extractor": "toggl-extractor"
       }
     },
     "rpi-temperature-tracker": {
@@ -207,6 +208,27 @@
         "owner": "dtgoitia",
         "ref": "main",
         "repo": "t-rs",
+        "type": "github"
+      }
+    },
+    "toggl-extractor": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741535149,
+        "narHash": "sha256-tt61vQn3jyK+B5TilZMOPFKl/vlW7ZUj0K+IcHGnrUE=",
+        "owner": "dtgoitia",
+        "repo": "toggl-extractor",
+        "rev": "faa9aac17efb517572aa367784b6912f27f718dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dtgoitia",
+        "ref": "main",
+        "repo": "toggl-extractor",
         "type": "github"
       }
     }
